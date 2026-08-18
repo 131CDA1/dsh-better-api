@@ -1,3 +1,5 @@
+<p align="center">🌐 <a href="./README.md"><kbd><b>English</b></kbd></a> · <a href="./README.zh.md"><kbd>中文</kbd></a></p>
+
 # dsh-better-api
 
 An enhanced **Models settings** plugin for the DSH Web GUI: per-model **reasoning strength** (reasoningEfforts) editing for your custom models.

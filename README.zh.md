@@ -1,3 +1,5 @@
+<p align="center">🌐 <a href="./README.md"><kbd>English</kbd></a> · <a href="./README.zh.md"><kbd><b>中文</b></kbd></a></p>
+
 # dsh-better-api
 
 增强版「模型设置」页插件（DSH Web GUI）：给自定义模型的**每个模型**提供**推理强度**（reasoningEfforts）编辑能力。
