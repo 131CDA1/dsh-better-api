@@ -1,0 +1,35 @@
+name: release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build release archive
+        run: |
+          VER="${GITHUB_REF_NAME#v}"
+          mkdir -p dist
+          zip -r "dist/dsh-better-api-v${VER}.zip" \
+            lib cordis.patch.yml package.json README.md README.zh.md LICENSE CHANGELOG.md
+          npm pack --pack-destination dist
+          mv "dist/dsh-better-api-${VER}.tgz" "dist/dsh-better-api.tgz"
+          (cd dist && sha256sum dsh-better-api-v${VER}.zip dsh-better-api.tgz > SHA256SUMS)
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/dsh-better-api-*.zip
+            dist/dsh-better-api.tgz
+            dist/SHA256SUMS
+          generate_release_notes: true
