@@ -1,4 +1,4 @@
-<p align="center">🌐 <a href="./README.md"><kbd><b>English</b></kbd></a> · <a href="./README.zh.md"><kbd>中文</kbd></a></p>
+English | [中文](README.zh.md)
 
 # dsh-better-api
 
@@ -12,6 +12,8 @@ The official models settings page ships no reasoning-effort control. This plugin
 - Hand-declared custom models (OpenAI-compatible gateways, etc.) now get an **Effort** menu in the conversation model picker (provider default + the declared levels); picking one persists it as the session default
 
 Forked from the official [@deepseek-ai/dsh-client-ui-settings-models](https://github.com/deepseek-ai/deepseek-harness) (MIT) with only this editing capability added; everything else behaves like the official plugin.
+
+<p align="center"><img src="./assets/preview.png" alt="dsh-better-api preview"></p>
 
 ## Features
 

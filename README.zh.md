@@ -1,4 +1,4 @@
-<p align="center">🌐 <a href="./README.md"><kbd>English</kbd></a> · <a href="./README.zh.md"><kbd><b>中文</b></kbd></a></p>
+[English](README.md) | 中文
 
 # dsh-better-api
 
@@ -12,6 +12,8 @@
 - 手工声明的自定义模型（OpenAI 兼容网关等）从此在聊天模型选择器中显示 **Effort 菜单**（提供方默认 + 各档位），选中后自动记住为会话默认
 
 基于官方 [@deepseek-ai/dsh-client-ui-settings-models](https://github.com/deepseek-ai/deepseek-harness)（MIT）分支，仅增加上述编辑能力，其余行为与官方一致。
+
+<p align="center"><img src="./assets/preview.png" alt="dsh-better-api 预览图"></p>
 
 ## 功能
 
