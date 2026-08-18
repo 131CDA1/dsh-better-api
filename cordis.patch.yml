@@ -1,0 +1,12 @@
+# dsh-better-api 组合补丁：插入本插件，并禁用与之冲突的官方模型设置行。
+# 安装器（dsh plugin add / dsh-market）会读取本文件并合并进目标 profile。
+#
+# 为什么必须禁用官方行：dsh-better-api 与官方插件共用
+# `settings.section#models` 槽位，重复注册会直接报错；
+# 本插件是官方「模型设置页」的增强版替代品（额外提供每模型推理强度编辑）。
+- id: ui-settings-models
+  disabled: true
+
+- insert:
+    - id: dsh-better-api
+      name: dsh-better-api
